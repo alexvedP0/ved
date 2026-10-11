@@ -41,8 +41,15 @@
       ],
     },
     "gifting.html": {
-      title: "Gifting",
+      title: "Gifting and Rewards",
       description: "Thoughtful corporate gifts to celebrate teams, clients and milestones.",
+      subcategories: [
+        "Joining kit",
+        "Festive hampers",
+        "Corporate gifting (client and premium)",
+        "Promotional merchandise",
+        "Gift vouchers",
+      ],
       photos: [
         ["gifting-01.jpg", "Corporate gift selections"],
         ["gifting-02.jpg", "Gift boxes and hampers"],
@@ -77,6 +84,23 @@
   description.className = "category-gallery-description";
   description.textContent = page.description;
   section.append(description);
+
+  if (page.subcategories) {
+    const subcategoryHeading = document.createElement("h2");
+    subcategoryHeading.className = "category-gallery-subcategory-heading";
+    subcategoryHeading.textContent = "Gifting sub-categories";
+    section.append(subcategoryHeading);
+
+    const subcategoryList = document.createElement("ul");
+    subcategoryList.className = "category-gallery-subcategories";
+    page.subcategories.forEach((name) => {
+      const item = document.createElement("li");
+      item.className = "category-gallery-subcategory";
+      item.textContent = name;
+      subcategoryList.append(item);
+    });
+    section.append(subcategoryList);
+  }
 
   const grid = document.createElement("div");
   grid.className = "category-gallery-grid";
