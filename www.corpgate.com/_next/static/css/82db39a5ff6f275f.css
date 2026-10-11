@@ -86,3 +86,47 @@
     transform: scaleY(1.2) !important;
     z-index: 10;
 }
+
+/* Keep the white CORPGATE wordmark readable on every page. */
+#__next > div > div.fixed.left-0.right-0.top-0.z-50 {
+    background-color: #102a43 !important;
+    box-shadow: 0 2px 12px rgba(10, 25, 41, 0.18);
+}
+
+#__next > div > div.fixed.left-0.right-0.top-0.z-50 a.text-gray-800 {
+    color: #102a43 !important;
+}
+
+#__next > div > div.fixed.left-0.right-0.top-0.z-50 button.relative.z-50 {
+    color: #ffffff;
+}
+
+:root {
+    --corpgate-page-background: #f3f6fb;
+    --corpgate-section-background: #edf2f8;
+}
+
+body,
+#__next {
+    background-color: var(--corpgate-page-background);
+}
+
+#__next .bg-white:not([class*="rounded"]) {
+    background-color: var(--corpgate-page-background) !important;
+}
+
+#__next .bg-gray-50 {
+    background-color: var(--corpgate-section-background) !important;
+}
+
+#__next .bg-blue-400 {
+    background-image: linear-gradient(90deg, #2563eb, #60a5fa, #2563eb) !important;
+}
+
+#__next > div > div.fixed.left-0.right-0.top-0.z-50.h-20.bg-white.bg-opacity-80 {
+    background-color: #dbeafe !important;
+}
+
+#__next > div > div.fixed.left-0.right-0.top-0.z-50.h-20.bg-transparent {
+    background-color: #dbeafe !important;
+}
