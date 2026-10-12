@@ -7,7 +7,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem 1.5rem 3rem;
-  color: #102a43;
+  color: var(--color-deep-purple);
   text-align: center;
 }
 
@@ -20,13 +20,13 @@
 
 .category-gallery-description {
   margin: 0.75rem auto 2rem;
-  color: #52677d;
+  color: var(--color-body-grey);
   font-size: 1rem;
 }
 
 .category-gallery-subcategory-heading {
   margin: 0 0 1rem;
-  color: #102a43;
+  color: var(--color-deep-purple);
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -46,10 +46,10 @@
   align-items: center;
   justify-content: center;
   padding: 0.9rem;
-  border: 1px solid #d7e0e7;
+  border: 1px solid var(--color-soft-lavender);
   border-radius: 6px;
-  background: #f7fafc;
-  color: #102a43;
+  background: var(--color-lilac);
+  color: var(--color-deep-purple);
   font-size: 0.95rem;
   font-weight: 600;
   text-align: center;
@@ -65,10 +65,10 @@
   min-width: 0;
   margin: 0;
   overflow: hidden;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-soft-lavender);
   border-radius: 0.9rem;
-  background: #fff;
-  box-shadow: 0 4px 14px rgb(16 42 67 / 7%);
+  background: var(--color-white);
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--color-night) 7%, transparent);
   text-align: left;
 }
 
@@ -77,12 +77,12 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  background: #f1f5f9;
+  background: var(--color-lilac);
 }
 
 .category-gallery-card figcaption {
   padding: 0.9rem 1rem;
-  color: #102a43;
+  color: var(--color-deep-purple);
   font-size: 0.95rem;
   font-weight: 600;
 }
@@ -92,8 +92,8 @@
   margin-top: 2rem;
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
-  background: #102a43;
-  color: #fff;
+  background: var(--color-gold);
+  color: var(--color-deep-purple);
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
@@ -102,7 +102,11 @@
 
 .category-gallery-back:hover,
 .category-gallery-back:focus-visible {
-  background: #1e4e72;
+  background: var(--color-gold-hover);
+}
+
+.category-gallery-back:hover {
+  color: var(--color-night);
 }
 
 @media (max-width: 900px) {

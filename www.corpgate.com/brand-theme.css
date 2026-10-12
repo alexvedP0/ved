@@ -1,0 +1,596 @@
+:root {
+  --color-primary: #5B2BA6;
+  --color-deep-purple: #261052;
+  --color-night: #100824;
+  --color-gold: #B28D51;
+  --color-gold-hover: #9A7743;
+  --color-white: #FFFFFF;
+  --color-lilac: #F5F0FC;
+  --color-body-grey: #5E5873;
+  --color-soft-lavender: #E2D0FF;
+}
+
+html:root {
+  --toastify-color-light: var(--color-white);
+  --toastify-color-dark: var(--color-night);
+  --toastify-color-info: var(--color-primary);
+  --toastify-color-success: var(--color-primary);
+  --toastify-color-warning: var(--color-gold);
+  --toastify-color-error: var(--color-night);
+  --toastify-color-transparent: color-mix(in srgb, var(--color-white) 70%, transparent);
+  --toastify-toast-background: var(--color-white);
+  --toastify-text-color-light: var(--color-body-grey);
+  --toastify-text-color-dark: var(--color-white);
+  --toastify-text-color-info: var(--color-white);
+  --toastify-text-color-success: var(--color-white);
+  --toastify-text-color-warning: var(--color-deep-purple);
+  --toastify-text-color-error: var(--color-white);
+  --toastify-spinner-color: var(--color-primary);
+  --toastify-spinner-color-empty-area: var(--color-lilac);
+  --toastify-color-progress-dark: var(--color-primary);
+  --tw-ring-color: color-mix(in srgb, var(--color-primary) 50%, transparent) !important;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-body-grey);
+}
+
+body #__next#__next :is([class*="bg-red-"], [class*="bg-orange-"], [class*="bg-yellow-"], [class*="bg-green-"], [class*="bg-teal-"], [class*="bg-cyan-"], [class*="bg-indigo-"], [class*="bg-purple-"], [class*="bg-pink-"], [class*="bg-rose-"]):not(button):not(a) {
+  background-color: var(--color-lilac) !important;
+  background-image: none !important;
+}
+
+#__next h1,
+#__next h2,
+#__next h3,
+#__next h4,
+#__next h5,
+#__next h6 {
+  color: var(--color-deep-purple) !important;
+}
+
+#__next [class~="bg-white"] {
+  background-color: var(--color-white) !important;
+}
+
+body #__next#__next .bg-white:not([class*="rounded"]) {
+  background-color: var(--color-white) !important;
+}
+
+#__next [class~="bg-gray-50"],
+#__next [class~="bg-gray-100"] {
+  background-color: var(--color-lilac) !important;
+}
+
+body #__next#__next :is([class~="bg-blue-50"], [class~="bg-blue-100"], [class~="bg-blue-200"]) {
+  background-color: var(--color-lilac) !important;
+  background-image: none !important;
+}
+
+body #__next#__next .bg-gray-50 {
+  background-color: var(--color-lilac) !important;
+}
+
+body #__next#__next :is([class~="bg-blue-700"], [class~="bg-blue-800"], [class~="bg-blue-900"], [class~="bg-blue-950"]) {
+  background-color: var(--color-night) !important;
+  background-image: none !important;
+}
+
+#__next [class~="bg-blue-300"],
+#__next [class~="bg-blue-400"],
+#__next [class~="bg-blue-500"],
+#__next [class~="bg-blue-600"] {
+  background-color: var(--color-lilac) !important;
+  background-image: none !important;
+}
+
+#__next [class~="bg-black0"],
+#__next [class~="bg-gray-900"],
+#__next [class~="bg-gray-950"] {
+  background-color: var(--color-night) !important;
+  background-image: none !important;
+}
+
+#__next [class~="text-gray-500"],
+#__next [class~="text-gray-600"],
+#__next [class~="text-gray-700"] {
+  color: var(--color-body-grey) !important;
+}
+
+#__next [class~="text-gray-800"],
+#__next [class~="text-gray-900"],
+#__next [class~="text-black"] {
+  color: var(--color-deep-purple) !important;
+}
+
+#__next [class~="text-blue-400"],
+#__next [class~="text-blue-500"],
+#__next [class~="text-blue-600"],
+#__next [class~="text-indigo-500"],
+#__next [class~="text-indigo-600"] {
+  color: var(--color-primary) !important;
+}
+
+body #__next#__next :is([class*="text-red-"], [class*="text-orange-"], [class*="text-yellow-"], [class*="text-green-"], [class*="text-teal-"], [class*="text-cyan-"], [class*="text-indigo-"], [class*="text-purple-"], [class*="text-pink-"], [class*="text-rose-"]) {
+  color: var(--color-primary) !important;
+}
+
+#__next [class~="text-white"] {
+  color: var(--color-white) !important;
+}
+
+#__next [class~="border-blue-300"],
+#__next [class~="border-blue-400"],
+#__next [class~="border-blue-500"] {
+  border-color: var(--color-primary) !important;
+}
+
+#__next [class~="border-gray-100"],
+#__next [class~="border-gray-200"],
+#__next [class~="border-gray-300"],
+#__next [class~="border-gray-400"] {
+  border-color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next :is([class*="border-red-"], [class*="border-orange-"], [class*="border-yellow-"], [class*="border-green-"], [class*="border-teal-"], [class*="border-cyan-"], [class*="border-indigo-"], [class*="border-purple-"], [class*="border-pink-"], [class*="border-rose-"]) {
+  border-color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next :is([class*="from-blue-"], [class*="from-red-"], [class*="from-orange-"], [class*="from-yellow-"], [class*="from-green-"], [class*="from-teal-"], [class*="from-cyan-"], [class*="from-indigo-"], [class*="from-purple-"], [class*="from-pink-"], [class*="from-rose-"]) {
+  --tw-gradient-from: var(--color-primary) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: color-mix(in srgb, var(--color-primary) 0%, transparent) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+body #__next#__next :is([class*="via-blue-"], [class*="via-red-"], [class*="via-orange-"], [class*="via-yellow-"], [class*="via-green-"], [class*="via-teal-"], [class*="via-cyan-"], [class*="via-indigo-"], [class*="via-purple-"], [class*="via-pink-"], [class*="via-rose-"]) {
+  --tw-gradient-via: var(--color-lilac) var(--tw-gradient-via-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to) !important;
+}
+
+body #__next#__next :is([class*="to-blue-"], [class*="to-red-"], [class*="to-orange-"], [class*="to-yellow-"], [class*="to-green-"], [class*="to-teal-"], [class*="to-cyan-"], [class*="to-indigo-"], [class*="to-purple-"], [class*="to-pink-"], [class*="to-rose-"]) {
+  --tw-gradient-to: var(--color-lilac) var(--tw-gradient-to-position) !important;
+}
+
+body #__next#__next :is([class~="bg-blue-300"], [class~="bg-blue-400"], [class~="bg-blue-500"], [class~="bg-blue-600"]) :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-white) !important;
+}
+
+body #__next#__next :is([class~="bg-blue-300"], [class~="bg-blue-400"], [class~="bg-blue-500"], [class~="bg-blue-600"]) :is(p, small, li, label, span) {
+  color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next :is([class~="bg-black0"], [class~="bg-gray-900"], [class~="bg-gray-950"]) :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-white) !important;
+}
+
+body #__next#__next :is([class~="bg-black0"], [class~="bg-gray-900"], [class~="bg-gray-950"]) :is(p, small, li, label, span) {
+  color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next :is([class~="bg-blue-700"], [class~="bg-blue-800"], [class~="bg-blue-900"], [class~="bg-blue-950"]) :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-white) !important;
+}
+
+body #__next#__next :is([class~="bg-blue-700"], [class~="bg-blue-800"], [class~="bg-blue-900"], [class~="bg-blue-950"]) :is(p, small, li, label, span) {
+  color: var(--color-soft-lavender) !important;
+}
+
+body #__next > div > div.h-20.fixed,
+body #__next > div > div[class*="fixed"][class*="h-20"][class*="top-0"][class*="z-50"] {
+  background-color: var(--color-primary) !important;
+  background-image: none !important;
+  --tw-ring-color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50.h-20.bg-white.bg-opacity-80,
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50.h-20.bg-transparent {
+  background-color: var(--color-primary) !important;
+  background-image: none !important;
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 a:hover {
+  color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 .corpgate-button {
+  color: var(--color-deep-purple) !important;
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 .corpgate-button:hover {
+  color: var(--color-night) !important;
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 [class*="top-full"] a {
+  color: var(--color-deep-purple) !important;
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 :focus-visible {
+  outline-color: var(--color-soft-lavender);
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 .corpgate-button:focus-visible {
+  outline-color: var(--color-night);
+}
+
+body #__next#__next > div > div.fixed.left-0.right-0.top-0.z-50 .corpgate-button {
+  --tw-ring-color: var(--color-night) !important;
+}
+
+body #__next > div > div.h-20.fixed a,
+body #__next > div > div[class*="fixed"][class*="h-20"][class*="top-0"][class*="z-50"] a,
+body #__next > div > div.h-20.fixed button,
+body #__next > div > div[class*="fixed"][class*="h-20"][class*="top-0"][class*="z-50"] button {
+  color: var(--color-white) !important;
+}
+
+body #__next > div > div.h-20.fixed a:hover,
+body #__next > div > div[class*="fixed"][class*="h-20"][class*="top-0"][class*="z-50"] a:hover {
+  color: var(--color-soft-lavender) !important;
+}
+
+body #__next > div > div.h-20.fixed [class*="absolute"][class*="top-full"],
+body #__next > div > div[class*="fixed"][class*="h-20"][class*="top-0"][class*="z-50"] [class*="absolute"][class*="top-full"] {
+  background-color: var(--color-white) !important;
+}
+
+body #__next > div > div.h-20.fixed [class*="absolute"][class*="top-full"] a,
+body #__next > div > div[class*="fixed"][class*="h-20"][class*="top-0"][class*="z-50"] [class*="absolute"][class*="top-full"] a {
+  color: var(--color-deep-purple) !important;
+}
+
+.corpgate-button,
+button[class~="bg-blue-300"],
+button[class~="bg-blue-400"],
+button[class~="bg-blue-500"],
+button[class~="bg-blue-600"],
+button[class*="bg-red-"],
+button[class*="bg-orange-"],
+button[class*="bg-yellow-"],
+button[class*="bg-green-"],
+button[class*="bg-teal-"],
+button[class*="bg-cyan-"],
+button[class*="bg-indigo-"],
+button[class*="bg-purple-"],
+button[class*="bg-pink-"],
+button[class*="bg-rose-"],
+a[class*="bg-red-"],
+a[class*="bg-orange-"],
+a[class*="bg-yellow-"],
+a[class*="bg-green-"],
+a[class*="bg-teal-"],
+a[class*="bg-cyan-"],
+a[class*="bg-indigo-"],
+a[class*="bg-purple-"],
+a[class*="bg-pink-"],
+a[class*="bg-rose-"],
+a[class~="bg-blue-300"],
+a[class~="bg-blue-400"],
+a[class~="bg-blue-500"],
+input[type="submit"],
+input[type="button"] {
+  border-color: var(--color-gold) !important;
+  background-color: var(--color-gold) !important;
+  background-image: none !important;
+  color: var(--color-deep-purple) !important;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+body #__next#__next button,
+body #__next#__next input[type="submit"],
+body #__next#__next input[type="button"],
+body #__next#__next a[class*="bg-"] {
+  --tw-ring-color: var(--color-gold) !important;
+}
+
+body #__next#__next #inquire-submit-button {
+  --tw-ring-color: var(--color-soft-lavender) !important;
+}
+
+.corpgate-button:hover,
+button[class~="bg-blue-300"]:hover,
+button[class~="bg-blue-400"]:hover,
+button[class~="bg-blue-500"]:hover,
+button[class~="bg-blue-600"]:hover,
+button[class*="bg-red-"]:hover,
+button[class*="bg-orange-"]:hover,
+button[class*="bg-yellow-"]:hover,
+button[class*="bg-green-"]:hover,
+button[class*="bg-teal-"]:hover,
+button[class*="bg-cyan-"]:hover,
+button[class*="bg-indigo-"]:hover,
+button[class*="bg-purple-"]:hover,
+button[class*="bg-pink-"]:hover,
+button[class*="bg-rose-"]:hover,
+a[class*="bg-red-"]:hover,
+a[class*="bg-orange-"]:hover,
+a[class*="bg-yellow-"]:hover,
+a[class*="bg-green-"]:hover,
+a[class*="bg-teal-"]:hover,
+a[class*="bg-cyan-"]:hover,
+a[class*="bg-indigo-"]:hover,
+a[class*="bg-purple-"]:hover,
+a[class*="bg-pink-"]:hover,
+a[class*="bg-rose-"]:hover,
+a[class~="bg-blue-300"]:hover,
+a[class~="bg-blue-400"]:hover,
+a[class~="bg-blue-500"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  border-color: var(--color-gold-hover) !important;
+  background-color: var(--color-gold-hover) !important;
+  color: var(--color-night) !important;
+}
+
+#__next a:not([class~="bg-blue-300"]):not([class~="bg-blue-400"]):not([class~="bg-blue-500"]):not(.corpgate-button):not(.category-gallery-back) {
+  color: var(--color-primary);
+}
+
+#__next a:not([class~="bg-blue-300"]):not([class~="bg-blue-400"]):not([class~="bg-blue-500"]):not(.corpgate-button):not(.category-gallery-back):hover {
+  color: var(--color-deep-purple);
+}
+
+#__next .category-gallery-back:hover {
+  color: var(--color-night);
+}
+
+#footer,
+#__next #footer {
+  background-color: var(--color-night) !important;
+  background-image: none !important;
+  color: var(--color-white) !important;
+  --tw-ring-color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next #footer {
+  background-color: var(--color-night) !important;
+  background-image: none !important;
+}
+
+body #__next#__next div#footer > .container > .grid {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 2rem !important;
+  border-color: var(--color-soft-lavender) !important;
+}
+
+body #__next#__next div#footer > .container > .grid > * {
+  min-width: 0;
+  margin-left: 0 !important;
+}
+
+body #__next#__next div#footer > .container > div:last-child {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  body #__next#__next div#footer > .container > .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: start;
+  }
+
+  body #__next#__next div#footer > .container > .grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  body #__next#__next div#footer > .container > .grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.9fr) minmax(0, 1fr) !important;
+    column-gap: 3rem !important;
+  }
+
+  body #__next#__next div#footer > .container > .grid > :first-child {
+    grid-column: auto;
+  }
+}
+
+#__next #footer * {
+  color: var(--color-soft-lavender) !important;
+}
+
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6,
+#footer p,
+#footer span,
+#footer li,
+#footer address,
+#footer label {
+  color: var(--color-soft-lavender);
+}
+
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 {
+  color: var(--color-white) !important;
+}
+
+#__next #footer :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-white) !important;
+}
+
+#__next #footer a {
+  color: var(--color-white) !important;
+}
+
+#__next #footer a:hover {
+  color: var(--color-soft-lavender) !important;
+}
+
+#footer a,
+#footer a:hover,
+#footer button,
+#footer button:hover {
+  color: var(--color-white) !important;
+}
+
+#footer .corpgate-button {
+  color: var(--color-deep-purple) !important;
+}
+
+#__next #footer .corpgate-button:hover {
+  color: var(--color-night) !important;
+}
+
+input,
+select,
+textarea {
+  border-color: var(--color-soft-lavender);
+  background-color: var(--color-white);
+  color: var(--color-deep-purple);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-body-grey);
+  opacity: 1;
+}
+
+:where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.corpgate-button:focus-visible,
+.home-hero-cta:focus-visible,
+.category-gallery-back:focus-visible {
+  outline-color: var(--color-night);
+}
+
+body #__next#__next #inquire-submit-button:focus-visible {
+  outline-color: var(--color-soft-lavender);
+}
+
+body #__next#__next :is([class~="bg-blue-300"], [class~="bg-blue-400"], [class~="bg-blue-500"], [class~="bg-blue-600"], [class~="bg-blue-700"], [class~="bg-blue-800"], [class~="bg-blue-900"], [class~="bg-blue-950"]) :focus-visible {
+  outline-color: var(--color-soft-lavender);
+}
+
+#footer :where(a, button, input, select, textarea, [tabindex]):focus-visible,
+[class~="bg-black0"] :where(a, button, input, select, textarea, [tabindex]):focus-visible,
+[class~="bg-gray-900"] :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline-color: var(--color-soft-lavender);
+}
+
+.home-topbar {
+  background-color: var(--color-night);
+  color: var(--color-soft-lavender);
+}
+
+.home-topbar a {
+  color: var(--color-white);
+}
+
+.home-topbar a:hover {
+  color: var(--color-soft-lavender);
+}
+
+.home-hero {
+  background-color: var(--color-primary);
+}
+
+.home-hero :is(h1, h2, h3, h4, h5, h6, p, a, span) {
+  color: var(--color-white);
+}
+
+body #__next#__next .home-hero :is(h1, h2, h3, h4, h5, h6) {
+  color: var(--color-white) !important;
+}
+
+body #__next#__next .home-hero :is(p, small, li) {
+  color: var(--color-soft-lavender) !important;
+}
+
+.home-hero :is(.home-hero-eyebrow, p) {
+  color: var(--color-soft-lavender);
+}
+
+.home-hero .home-hero-content > a {
+  border-color: var(--color-gold) !important;
+  background-color: var(--color-gold) !important;
+  background-image: none !important;
+  color: var(--color-deep-purple) !important;
+}
+
+.home-hero .home-hero-content > a:hover {
+  border-color: var(--color-gold-hover) !important;
+  background-color: var(--color-gold-hover) !important;
+  color: var(--color-night) !important;
+}
+
+body #__next#__next .home-hero .home-hero-cta {
+  border-color: var(--color-gold) !important;
+  background-color: var(--color-gold) !important;
+  background-image: none !important;
+  color: var(--color-deep-purple) !important;
+}
+
+body #__next#__next .home-hero .home-hero-cta:hover {
+  border-color: var(--color-gold-hover) !important;
+  background-color: var(--color-gold-hover) !important;
+  color: var(--color-night) !important;
+}
+
+body #__next#__next .home-proof-stat {
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+}
+
+body #__next#__next .home-proof-stat span {
+  color: var(--color-soft-lavender) !important;
+}
+
+.floating-contact-button {
+  border-color: var(--color-white);
+  background-color: var(--color-gold);
+  color: var(--color-deep-purple);
+  --contact-glow: var(--color-gold);
+}
+
+.floating-contact-button:focus-visible {
+  outline-color: var(--color-primary);
+}
+
+.brand-glow {
+  box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 60%, transparent);
+}
+
+.brand-shadow-card {
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--color-night) 5%, transparent);
+}
+
+.brand-shadow-card-medium {
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--color-night) 8%, transparent);
+}
+
+.brand-shadow-card-hover:hover {
+  box-shadow: 0 4px 25px color-mix(in srgb, var(--color-night) 10%, transparent);
+}
+
+.brand-shadow-card-hover-medium:hover {
+  box-shadow: 0 4px 25px color-mix(in srgb, var(--color-night) 12%, transparent);
+}
+
+body #__next#__next .relative.top-0.w-full[style*="background-image"] {
+  background-color: var(--color-lilac) !important;
+  background-image:
+    radial-gradient(ellipse at 12% 89%, color-mix(in srgb, var(--color-primary) 18%, transparent), transparent 35%),
+    radial-gradient(ellipse at 49% 41%, color-mix(in srgb, var(--color-primary) 16%, transparent), transparent 36%),
+    radial-gradient(ellipse at 97% 96%, color-mix(in srgb, var(--color-primary) 18%, transparent), transparent 35%),
+    radial-gradient(ellipse at 94% 23%, color-mix(in srgb, var(--color-primary) 16%, transparent), transparent 26%) !important;
+}
+
+#inquire-submit-button:focus-visible {
+  outline-color: var(--color-soft-lavender);
+  --tw-ring-color: var(--color-soft-lavender) !important;
+}
+
+.brand-glow:hover {
+  color: var(--color-deep-purple);
+}
