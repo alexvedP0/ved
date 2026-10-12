@@ -594,3 +594,161 @@ body #__next#__next .relative.top-0.w-full[style*="background-image"] {
 .brand-glow:hover {
   color: var(--color-deep-purple);
 }
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full {
+  position: relative;
+  display: flex;
+  min-height: clamp(460px, 58vw, 640px);
+  box-sizing: border-box;
+  align-items: center;
+  overflow: hidden;
+  padding: 140px clamp(24px, 9vw, 140px) 88px;
+  isolation: isolate;
+  background-color: var(--color-night) !important;
+  background-image: linear-gradient(115deg, var(--color-night), var(--color-primary)) !important;
+}
+
+body:has(img[src="images/about.png"]) #__next#__next .relative.top-0.w-full[style*="background-image"] {
+  background-color: var(--color-night) !important;
+  background-image: linear-gradient(115deg, var(--color-night), var(--color-primary)) !important;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full::before {
+  position: absolute;
+  z-index: -1;
+  top: -24%;
+  right: -8%;
+  width: clamp(280px, 42vw, 580px);
+  aspect-ratio: 1;
+  border: 1px solid color-mix(in srgb, var(--color-soft-lavender) 24%, transparent);
+  border-radius: 50%;
+  content: "";
+  box-shadow:
+    0 0 0 48px color-mix(in srgb, var(--color-soft-lavender) 5%, transparent),
+    0 0 0 96px color-mix(in srgb, var(--color-soft-lavender) 4%, transparent);
+  pointer-events: none;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full > img {
+  display: none;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full > .absolute {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  display: block;
+  width: min(100%, 1080px);
+  max-width: 1080px;
+  padding: 0 !important;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full div[style*="max-width: 56rem"] {
+  max-width: 760px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  text-align: left !important;
+  backdrop-filter: none !important;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full h1 {
+  margin: 0;
+  color: var(--color-white) !important;
+  font-size: clamp(3rem, 7vw, 5.75rem);
+  line-height: 1.05;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full h1::after {
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin-top: 24px;
+  border-radius: 999px;
+  background-color: var(--color-gold);
+  content: "";
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full p {
+  max-width: 570px;
+  margin-top: 24px;
+  padding: 0;
+  color: var(--color-soft-lavender) !important;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.65;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div {
+  padding: 76px 24px 96px;
+  background: var(--color-white) !important;
+  background-image: none !important;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > h1 {
+  margin: 0;
+  color: var(--color-deep-purple) !important;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid {
+  width: min(100%, 1080px);
+  gap: 28px;
+  margin: 44px auto 0;
+  padding: 0 0 20px;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid > .group {
+  overflow: hidden;
+  padding: 16px 16px 24px;
+  border: 1px solid var(--color-lilac);
+  border-radius: 16px;
+  background-color: var(--color-lilac);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--color-night) 8%, transparent);
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid > .group > img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid > .group > h1 {
+  margin-top: 20px;
+  color: var(--color-deep-purple) !important;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid > .group > h3 {
+  color: var(--color-body-grey) !important;
+}
+
+body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid > .group > span {
+  background: var(--color-gold);
+}
+
+@media (max-width: 767px) {
+  body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full {
+    min-height: 430px;
+    padding: 120px 24px 64px;
+  }
+
+  body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full::before {
+    top: -8%;
+    right: -42%;
+    width: 320px;
+  }
+
+  body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div {
+    padding: 56px 20px 64px;
+  }
+
+  body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid {
+    margin-top: 30px;
+  }
+
+  body:has(img[src="images/about.png"]) #__next .relative.top-0.w-full + div > .grid > .group > img {
+    height: 260px;
+  }
+}
